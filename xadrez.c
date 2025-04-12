@@ -5,7 +5,44 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
+
+    int i, mov ;
+    //movimento do bispo:
+        printf("MOVIMENTO DO BISPO:\n");
+        printf("escolha quantas casas deseja mover o BISPO:\n");
+        scanf ("%d",&mov);
+        printf("*************************\n");
+        for(i = 0; i < mov; i++)
+        {
+            printf("%d - para cima \n",i+1);
+            printf("%d - para a direita\n",i+1);
+        }
+    //movimento da torre:
+        printf("MOVIMENTO TORRE :\n");
+        printf("escolha quantas casas deseja mover a TORRE:\n");
+        scanf ("%d",&mov); 
+        printf("*************************\n");
+
+        for(i = 0;i < mov; i++)
+        {
+            printf("%d - para direita \n",i+1);
+        }
+    //movimento da rainha:
+        printf("MOVIMENTO DA RAINHA\n");
+        printf("escolha quantas casas deseja mover a RAINHA:\n");
+        scanf ("%d",&mov);
+        printf("*************************\n");
+
+        for(i = 0; i < mov ; i++)
+        {
+            printf("%d para a esquerda \n", i+1);
+        }
+
+    
     // Nível Novato - Movimentação das Peças
+    //Bispo: 5 casas na diagonal superior direita
+    //Torre: 5 casas para a direita
+    //Rainha: 8 casas para a esquerda
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
     // Implementação de Movimentação do Bispo
